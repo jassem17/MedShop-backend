@@ -13,7 +13,6 @@ public class ProductService {
     @Autowired
     public ProductService(ProductRepository productRepository){this.productRepository=productRepository;}
 
-
     public List<Product> getAllProduct(){return productRepository.findAll();}
 
     public List<Product> getProductByCategoryId(Integer id) {
